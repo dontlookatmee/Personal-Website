@@ -1,5 +1,19 @@
-.navbar-brand a {
-  color: #67b678;
-  font-size: 1.5rem;
-  font-weight: bold;
+nav {
+  background-color: rgba(0, 0, 0, 0.281);
+}
+.navbar-brand .navbar-item {
+  padding-top: 0;
+}
+
+.navbar-menu .navbar-end a {
+  color: #fff;
+}
+.navbar-menu .navbar-end a:hover {
+  color: #139187;
+  background-color: unset;
+  cursor: pointer;
+}
+img {
+  min-height: 80px;
+  width: 80px;
 }
