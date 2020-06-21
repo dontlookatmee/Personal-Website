@@ -1,8 +1,37 @@
+.container-homepage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.473);
+}
+
 .bg-img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  filter: blur(3px);
+  z-index: -999;
+}
+.content {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.content p {
+  text-align: center;
+  color: rgb(221, 221, 221);
+}
+.content p:first-of-type {
+  margin-bottom: 15px;
+  font-size: 5.5em;
+  line-height: 1.3em;
+  font-style: italic;
+}
+.content p:last-of-type {
+  font-size: 1.2em;
+  font-weight: bold;
 }

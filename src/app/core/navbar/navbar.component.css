@@ -1,11 +1,13 @@
 nav {
   background-color: rgba(0, 0, 0, 0.281);
+  z-index: 5;
 }
 .navbar-brand .navbar-item {
   padding-top: 0;
 }
 
 .navbar-menu .navbar-end a {
+  font-weight: bold;
   color: #fff;
 }
 .navbar-menu .navbar-end a:hover {
