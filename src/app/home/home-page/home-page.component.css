@@ -98,3 +98,75 @@
   justify-content: center;
   margin-top: 50px;
 }
+
+/* More */
+.more-homepage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.more-homepage .more-about,
+.more-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+  height: 600px;
+}
+.more-homepage .about-content,
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+  height: 60%;
+  border-radius: 100%;
+}
+.more-homepage .more-about {
+  background-color: #efeee5;
+}
+.more-homepage .more-contact {
+  background-color: #139187;
+}
+.more-homepage .about-content {
+  border: 10px solid #139187;
+}
+.more-homepage .contact-content {
+  border: 10px solid #efeee5;
+}
+.more-homepage .about-content:hover {
+  transition: border-radius 0.5s, height 0.5s;
+  cursor: pointer;
+  border-radius: 7px;
+  height: 30%;
+}
+.more-homepage .contact-content:hover {
+  transition: border-radius 0.5s, height 0.5s;
+  cursor: pointer;
+  border-radius: 7px;
+  height: 30%;
+}
+.more-homepage .contact-content .text p {
+  color: #fff;
+}
+.more-homepage .about-content .text p {
+  color: #139187;
+}
+.more-homepage .about-content .text p:first-of-type {
+  font-size: 1.2em;
+  font-style: italic;
+}
+.more-homepage .about-content .text p:last-of-type {
+  font-size: 3em;
+}
+
+.more-homepage .contact-content .text p:first-of-type {
+  font-size: 1.1em;
+  font-style: italic;
+}
+.more-homepage .contact-content .text p:last-of-type {
+  font-size: 3em;
+}
