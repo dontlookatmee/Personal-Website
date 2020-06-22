@@ -9,10 +9,14 @@ nav {
 .navbar-menu .navbar-end a {
   font-weight: bold;
   color: #fff;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s ease-in;
+  background-color: unset;
 }
 .navbar-menu .navbar-end a:hover {
+  transition: color 1s;
   color: #139187;
-  background-color: unset;
+  border-bottom: 1px solid #139187;
   cursor: pointer;
 }
 
@@ -23,7 +27,3 @@ nav {
   min-height: 95px;
   min-width: 95px;
 }
-/* img {
-  min-height: 120px;
-  width: 120px;
-} */
