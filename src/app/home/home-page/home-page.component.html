@@ -10,11 +10,30 @@
     <p>Get ready to turn you ideas into reallity</p>
   </div>
   <div class="scroll-down">
-    <app-scroll-down></app-scroll-down>
+    <!-- <app-scroll-down></app-scroll-down> -->
   </div>
 </div>
-<div class="skills">
-  <!-- <app-card
-    image="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
-  ></app-card> -->
+<div class="skills-homepage">
+  <div class="container">
+    <div class="skills-content">
+      <div class="skills-me">
+        <p>Hi. I'm Daniel, nice to meet you. Please take a look around!</p>
+      </div>
+      <div class="skills-about">
+        <p>
+          I am passionate about building excellent software that improves the
+          lives of those around me. I specialize in creating software using
+          HTML/CSS, JavaScript, Angular, React, TypeScript, Firebase, Bootstrap
+          and many more.
+        </p>
+      </div>
+    </div>
+    <div class="skills-container">
+      <app-card
+        *ngFor="let skill of skillsService.mySkillsImg"
+        [image]="skill.img"
+        [size]="skill.size"
+      ></app-card>
+    </div>
+  </div>
 </div>

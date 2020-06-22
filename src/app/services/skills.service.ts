@@ -51,6 +51,15 @@ export class SkillsService {
         "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png",
     },
     {
+      name: "Bootstrap",
+      size: {
+        width: "55%",
+        height: "55%",
+      },
+      img:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png",
+    },
+    {
       name: "TypeScript",
       size: {
         width: "80%",
@@ -67,15 +76,6 @@ export class SkillsService {
       },
       img:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/512px-Firebase_Logo.svg.png",
-    },
-    {
-      name: "Bootstrap",
-      size: {
-        width: "55%",
-        height: "55%",
-      },
-      img:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png",
     },
   ];
   constructor() {}

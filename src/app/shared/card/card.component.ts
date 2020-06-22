@@ -12,6 +12,7 @@ export class CardComponent implements OnInit {
   @Input("mediaSubtitle") mediaSubtitle: string;
   @Input("contentText") contentText: string;
   @Input("date") date: string;
+  @Input("size") size?: {};
 
   constructor() {}
 
