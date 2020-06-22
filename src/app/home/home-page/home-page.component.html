@@ -42,11 +42,13 @@
     <h2>My Work</h2>
     <div class="projects-grid">
       <app-project-card
-        img="https://camo.githubusercontent.com/c0ce0cb45ed6480b0f3b6a16f8249d7b8f0abfad/68747470733a2f2f692e696d6775722e636f6d2f67716e373834632e706e67"
-        title="ConnectValve"
-        desc="A collaboration application"
-        link="https://connectvalve.firebaseapp.com/"
+        *ngFor="let project of projectService.projects"
+        [img]="project.image"
+        [title]="project.name"
+        [desc]="project.description"
+        [link]="project.link"
       ></app-project-card>
     </div>
   </div>
 </div>
+<div class="more-homepage"></div>
