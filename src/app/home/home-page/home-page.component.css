@@ -80,3 +80,21 @@
   margin-top: 10px;
   font-size: 1em;
 }
+
+/* Porojects */
+.projects-homepage {
+  padding: 30px 0;
+}
+.projects-homepage h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+}
+.projects-homepage .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 310px));
+  grid-template-rows: auto;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 50px;
+}

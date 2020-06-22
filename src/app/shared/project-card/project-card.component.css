@@ -1,16 +1,10 @@
-body h1 {
-  font-family: Lato;
-  font-weight: 300;
-  color: #cfcfcf;
-  font-size: 50px;
-  margin-left: 5px;
-  text-transform: uppercase;
-}
 .portfolio-card {
   width: 300px;
   height: 200px;
   background-size: 110%;
   background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
   transition: all 0.2s ease-out 0.5s;
   padding: 20px;
   box-sizing: border-box;
@@ -66,6 +60,8 @@ body h1 {
   box-shadow: inset 0px 0px 150px 100px rgba(0, 0, 0, 0.8);
   background-size: 100%;
   transition: all 0.2s ease-out 0s;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .portfolio-card:hover h1 {
   opacity: 1;
