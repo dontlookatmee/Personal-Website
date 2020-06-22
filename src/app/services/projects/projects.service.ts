@@ -15,19 +15,19 @@ export class ProjectsService {
     {
       name: "ConnectValve",
       description:
-        "Collaboration app written with Angular, RxJs, Firebase, Bootstrap",
+        "Collaboration app. Technologies: Angular, RxJs, Firebase, Bootstrap",
       image: "../../../assets/project-card/ConnectValve.png",
       link: "https://connectvalve.firebaseapp.com/",
     },
     {
       name: "Pokemon",
-      description: "Pokemon fight game written with Vanilla JavaScript OOP",
+      description: "Pokemon fight game. Technologies: Vanilla JavaScript OOP",
       image: "../../../assets/project-card/pokemon.png",
       link: "https://github.com/dontlookatmee/PokemonGame",
     },
     {
       name: "GithubFinder",
-      description: "Github user finder written with React, Axios",
+      description: "Github user finder. Technologies: React, Axios",
       image: "../../../assets/project-card/GithubFinder.png",
       link: "https://gihubfinder00.netlify.app/",
     },

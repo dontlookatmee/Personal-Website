@@ -121,9 +121,10 @@
   align-items: center;
   font-weight: bold;
   text-align: center;
-  width: 50%;
-  height: 60%;
+  width: 400px;
+  height: 400px;
   border-radius: 100%;
+  transition: border-radius 0.5s, height 0.5s;
 }
 .more-homepage .more-about {
   background-color: #efeee5;
@@ -138,13 +139,11 @@
   border: 10px solid #efeee5;
 }
 .more-homepage .about-content:hover {
-  transition: border-radius 0.5s, height 0.5s;
   cursor: pointer;
   border-radius: 7px;
   height: 30%;
 }
 .more-homepage .contact-content:hover {
-  transition: border-radius 0.5s, height 0.5s;
   cursor: pointer;
   border-radius: 7px;
   height: 30%;
@@ -169,4 +168,40 @@
 }
 .more-homepage .contact-content .text p:last-of-type {
   font-size: 3em;
+}
+
+/* Footer */
+.footer-homepage {
+  width: 100%;
+  background-color: #000;
+  color: rgb(202, 202, 202);
+}
+.footer-homepage .container {
+  background-color: #000;
+  padding: 10px 0;
+}
+.footer-homepage .footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-homepage .footer p {
+  font-size: 0.9em;
+}
+.footer-homepage .footer a {
+  color: rgb(202, 202, 202);
+}
+.footer-homepage .footer .social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+
+.footer-homepage .footer .social a:hover {
+  cursor: pointer;
+  color: #fff;
 }
