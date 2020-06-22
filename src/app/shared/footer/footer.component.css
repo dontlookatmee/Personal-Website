@@ -1,0 +1,35 @@
+/* Footer */
+.footer-homepage {
+  width: 100%;
+  background-color: #000;
+  color: rgb(202, 202, 202);
+}
+.footer-homepage .container {
+  background-color: #000;
+  padding: 10px 0;
+}
+.footer-homepage .footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-homepage .footer p {
+  font-size: 0.9em;
+}
+.footer-homepage .footer a {
+  color: rgb(202, 202, 202);
+}
+.footer-homepage .footer .social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+}
+
+.footer-homepage .footer .social a:hover {
+  cursor: pointer;
+  color: #fff;
+}

@@ -77,3 +77,9 @@
   bottom: -10px;
   transition: all 0.2s ease-out 0.4s;
 }
+
+@media screen and (max-width: 400px) {
+  .portfolio-card {
+    width: 93%;
+  }
+}

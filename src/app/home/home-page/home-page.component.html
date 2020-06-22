@@ -4,16 +4,15 @@
     src="../../../assets/logo/bg-image/backgroundImage.jpeg"
     alt=""
   />
-  <app-navbar></app-navbar>
   <div class="content">
     <p>Not Your Average Software Engineer</p>
     <p>Get ready to turn you ideas into reallity</p>
   </div>
   <div class="scroll-down">
-    <!-- <app-scroll-down></app-scroll-down> -->
+    <app-scroll-down></app-scroll-down>
   </div>
 </div>
-<div class="skills-homepage">
+<div id="section2" class="skills-homepage">
   <div class="container">
     <div class="skills-content">
       <div class="skills-me">
@@ -39,7 +38,7 @@
 </div>
 <div class="projects-homepage">
   <div class="container">
-    <h2>My Work</h2>
+    <h2>My Projects</h2>
     <div class="projects-grid">
       <app-project-card
         *ngFor="let project of projectService.projects"
@@ -69,19 +68,4 @@
     </div>
   </div>
 </div>
-<div class="footer-homepage">
-  <div class="container footer">
-    <p>@ 2020 Daniel Pashaliyski.</p>
-    <div class="social">
-      <a href="https://linkedin.com/in/daniel-pashaliyski-ab65baa0">
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-      </a>
-      <a href="https://github.com/dontlookatmee">
-        <i class="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a href="https://facebook.com/daniel.pashaliyski">
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-      </a>
-    </div>
-  </div>
-</div>
+<app-footer></app-footer>
