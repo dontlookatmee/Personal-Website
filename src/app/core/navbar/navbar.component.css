@@ -18,10 +18,10 @@ nav {
 
 .brand-logo {
   position: absolute;
-  top: -25px;
+  top: -21px;
   left: 5px;
-  min-height: 100px;
-  min-width: 100px;
+  min-height: 95px;
+  min-width: 95px;
 }
 /* img {
   min-height: 120px;
