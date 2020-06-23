@@ -5,6 +5,7 @@ import { CardComponent } from "./card/card.component";
 import { ProjectCardComponent } from "./project-card/project-card.component";
 import { RouterModule } from "@angular/router";
 import { FooterComponent } from "./footer/footer.component";
+import { ValidationComponent } from "./validation/validation.component";
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { FooterComponent } from "./footer/footer.component";
     CardComponent,
     ProjectCardComponent,
     FooterComponent,
+    ValidationComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
@@ -19,6 +21,7 @@ import { FooterComponent } from "./footer/footer.component";
     CardComponent,
     ProjectCardComponent,
     FooterComponent,
+    ValidationComponent,
   ],
 })
 export class SharedModule {}

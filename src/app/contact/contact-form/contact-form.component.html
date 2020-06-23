@@ -1,0 +1,67 @@
+<div class="container">
+  <h2>Contact</h2>
+  <form [formGroup]="contactForm" (ngSubmit)="handleFormSubmit()">
+    <div class="field">
+      <label class="label">Name</label>
+      <div class="control">
+        <input
+          formControlName="name"
+          class="input"
+          type="text"
+          placeholder="e.g Daniel Pashaliyski"
+        />
+      </div>
+    </div>
+    <!--Name Validation-->
+    <app-validation [control]="contactForm.get('name')"></app-validation>
+    <!--Name Validation-->
+
+    <div class="field">
+      <label class="label">Email</label>
+      <div class="control">
+        <input
+          formControlName="email"
+          class="input"
+          type="email"
+          placeholder="e.g. daniel@gmail.com"
+        />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Subject</label>
+      <div class="control">
+        <input
+          formControlName="subject"
+          class="input"
+          type="text"
+          placeholder="e.g. Can you please contact me ?"
+        />
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Message</label>
+      <div class="control">
+        <textarea
+          formControlName="message"
+          class="textarea"
+          placeholder="Message"
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="field is-grouped is-grouped-right">
+      <p class="control">
+        <button class="button is-primary" type="submit">
+          Submit
+        </button>
+      </p>
+      <p class="control">
+        <button type="reset" class="button is-outlined">
+          Cancel
+        </button>
+      </p>
+    </div>
+  </form>
+</div>
