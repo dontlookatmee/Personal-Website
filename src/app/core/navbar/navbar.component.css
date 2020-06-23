@@ -1,7 +1,5 @@
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: block;
   width: 100%;
 }
 .columns {
@@ -11,7 +9,7 @@ header {
   padding: 0;
 }
 nav {
-  background-color: rgba(0, 0, 0, 0.432);
+  background-color: rgb(0, 0, 0);
   z-index: 5;
 }
 
@@ -22,7 +20,7 @@ nav {
 .navbar-menu .navbar-end a {
   font-weight: bold;
   color: #fff;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
   transition: all 0.5s ease-in;
   background-color: unset;
 }
@@ -36,13 +34,23 @@ nav {
 .brand-logo {
   position: absolute;
   top: -15px;
-  left: 10px;
-  min-height: 95px;
-  min-width: 95px;
+  left: 5px;
+  min-height: 100px;
+  min-width: 100px;
+}
+.is-active .navbar-end a {
+  color: black;
 }
 
 @media screen and (min-width: 1024px) {
   .navbar {
     min-height: 4.25em;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .brand-logo {
+    top: -12px;
+    min-width: 80px;
+    min-height: 80px;
   }
 }

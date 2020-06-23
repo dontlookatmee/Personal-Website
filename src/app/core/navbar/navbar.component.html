@@ -7,6 +7,8 @@
         </a>
 
         <a
+          (click)="handleMenuClick(menu, burger)"
+          #burger
           role="button"
           class="navbar-burger"
           aria-label="menu"
@@ -18,7 +20,7 @@
         </a>
       </div>
 
-      <div class="navbar-menu">
+      <div #menu class="navbar-menu">
         <div class="navbar-end">
           <a routerLink="./" class="navbar-item">Home</a>
           <a routerLink="about" class="navbar-item">About</a>
