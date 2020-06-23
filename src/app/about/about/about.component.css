@@ -1,3 +1,7 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
 .about-start {
   display: flex;
   flex-direction: row;
@@ -33,3 +37,70 @@
 }
 
 /* About Me */
+.about-me {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about-me .coding,
+.sports,
+.nature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+  height: 500px;
+  flex-basis: 33.33%;
+}
+.about-me .coding h2,
+.sports h2,
+.nature h2 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #139187;
+  margin-bottom: 10px;
+}
+.about-me .coding,
+.nature {
+  background-color: #f9f9f9;
+}
+.about-me .sports {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1400px) {
+  .about-me .coding,
+  .sports,
+  .nature {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .about-start {
+    height: 100%;
+  }
+  .about-start .about-image,
+  .about-info {
+    flex-basis: 100%;
+  }
+  .about-me .coding,
+  .sports,
+  .nature {
+    flex-basis: 100%;
+  }
+  .about-start .about-info {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about-start .about-info h2 {
+    font-size: 2.5em;
+  }
+  .about-me .coding,
+  .sports,
+  .nature {
+    flex-basis: 100%;
+    padding: 30px;
+  }
+}
