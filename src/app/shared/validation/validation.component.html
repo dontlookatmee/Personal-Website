@@ -12,4 +12,7 @@
     {{ control.errors.minlength.actualLength }} characters long, but it must be
     at least {{ control.errors.minlength.requiredLength }} characters
   </div>
+  <div *ngIf="control.errors?.pattern" class="validation">
+    Your email is invalid.
+  </div>
 </ng-container>

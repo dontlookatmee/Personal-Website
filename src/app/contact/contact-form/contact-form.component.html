@@ -27,6 +27,9 @@
         />
       </div>
     </div>
+    <!--Email Validation-->
+    <app-validation [control]="contactForm.get('email')"></app-validation>
+    <!--Email Validation-->
 
     <div class="field">
       <label class="label">Subject</label>
@@ -39,6 +42,9 @@
         />
       </div>
     </div>
+    <!--Subject Validation-->
+    <app-validation [control]="contactForm.get('subject')"></app-validation>
+    <!--Subject Validation-->
 
     <div class="field">
       <label class="label">Message</label>
@@ -50,10 +56,17 @@
         ></textarea>
       </div>
     </div>
+    <!--Message Validation-->
+    <app-validation [control]="contactForm.get('message')"></app-validation>
+    <!--Message Validation-->
 
     <div class="field is-grouped is-grouped-right">
       <p class="control">
-        <button class="button is-primary" type="submit">
+        <button
+          class="button is-primary"
+          type="submit"
+          [disabled]="contactForm.invalid"
+        >
           Submit
         </button>
       </p>

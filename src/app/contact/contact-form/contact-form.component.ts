@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, Validators } from "@angular/forms";
+import { EmailService, Email } from "src/app/services/email/email.service";
 
 @Component({
   selector: "app-contact-form",
@@ -14,7 +15,12 @@ export class ContactFormComponent implements OnInit {
     ],
     email: [
       "",
-      [Validators.required, Validators.minLength(3), Validators.maxLength(30)],
+      [
+        Validators.required,
+        Validators.pattern(
+          /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        ),
+      ],
     ],
     subject: [
       "",
@@ -22,18 +28,28 @@ export class ContactFormComponent implements OnInit {
     ],
     message: [
       "",
-      [Validators.required, Validators.minLength(3), Validators.maxLength(500)],
+      [
+        Validators.required,
+        Validators.minLength(10),
+        Validators.maxLength(500),
+      ],
     ],
   });
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private emailService: EmailService) {}
 
   ngOnInit(): void {}
 
   handleFormSubmit() {
-    console.log("clicked");
-    console.log(this.contactForm.controls.name.value);
-    console.log(this.contactForm.controls.email.value);
-    console.log(this.contactForm.controls.subject.value);
-    console.log(this.contactForm.controls.message.value);
+    if (this.contactForm.valid) {
+      const email = {
+        name: this.contactForm.controls.name.value,
+        _replyto: this.contactForm.controls.email.value,
+        subject: this.contactForm.controls.subject.value,
+        message: this.contactForm.controls.message.value,
+      };
+      this.emailService.sendEmail(email).subscribe((x) => {
+        this.contactForm.reset();
+      });
+    }
   }
 }
