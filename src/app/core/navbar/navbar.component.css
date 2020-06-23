@@ -4,10 +4,17 @@ header {
   left: 0;
   width: 100%;
 }
+.columns {
+  margin: 0;
+}
+.column {
+  padding: 0;
+}
 nav {
-  background-color: rgba(0, 0, 0, 0.281);
+  background-color: rgba(0, 0, 0, 0.432);
   z-index: 5;
 }
+
 .navbar-brand .navbar-item {
   padding-top: 0;
 }
@@ -28,8 +35,14 @@ nav {
 
 .brand-logo {
   position: absolute;
-  top: -21px;
-  left: 5px;
+  top: -15px;
+  left: 10px;
   min-height: 95px;
   min-width: 95px;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    min-height: 4.25em;
+  }
 }
