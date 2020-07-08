@@ -195,4 +195,16 @@
   .content p:first-of-type {
     font-size: 3.5em;
   }
+
+  .skills-homepage .skills-content .skills-me,
+  .skills-about {
+    flex-basis: 100%;
+  }
+  .skills-me p {
+    text-align: center;
+  }
+  .footer-homepage .container-footer {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }

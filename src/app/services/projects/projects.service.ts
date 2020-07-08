@@ -20,6 +20,13 @@ export class ProjectsService {
       link: "https://connectvalve.firebaseapp.com/",
     },
     {
+      name: "StreamMotion",
+      description:
+        "Stream app. Technologies: Angular, RxJs, Firebase, Bootstrap",
+      image: "../../../assets/project-card/StreamMotion.png",
+      link: "https://streammotion-18f8d.web.app/",
+    },
+    {
       name: "Pokemon",
       description: "Pokemon fight game. Technologies: Vanilla JavaScript OOP",
       image: "../../../assets/project-card/pokemon.png",

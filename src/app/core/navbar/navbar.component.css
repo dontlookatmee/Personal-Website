@@ -26,8 +26,8 @@ nav {
 }
 .navbar-menu .navbar-end a:hover {
   transition: color 1s;
-  color: #139187;
-  border-bottom: 2px solid #139187;
+  color: #67b678;
+  border-bottom: 2px solid #67b678;
   cursor: pointer;
 }
 
